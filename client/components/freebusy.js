@@ -29,11 +29,6 @@ export default class FreeBusy extends React.Component {
         }
       ]
     }
-    const res = await axios.post(
-      'https://www.googleapis.com/calendar/v3/freeBusy?key=AIzaSyAXOTSq8HAaWP59Rgtpz8PmuPcuHoXZnO8',
-      body
-    )
-    console.log(res.data)
   }
 
   render() {
