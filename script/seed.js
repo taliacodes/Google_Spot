@@ -25,7 +25,12 @@ async function seed() {
       time: null,
       location: null
     }),
-    Event.create({title: 'Reunion', date: null, time: null, location: null})
+    Event.create({
+      title: 'Reunion',
+      date: null,
+      time: null,
+      location: null
+    })
   ])
   console.log(`seeded ${users.length} users`)
   console.log(`seeded ${events.length} events`)
