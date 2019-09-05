@@ -3,40 +3,40 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
-import AppBar from '@material-ui/core/AppBar'
 
 const Navbar = ({handleClick, isLoggedIn, email}) => (
-  <AppBar
-    position="sticky"
-    style={{
-      opacity: '50%',
-      backgroundColor: '#292929'
-    }}
-  >
-    <div>
-      <h1>Spot</h1>
-      <nav>
-        {isLoggedIn ? (
-          <div>
-            {/* The navbar will show these links after you log in */}
-            <Link to="/home">Home</Link>
-            <a href="#" onClick={handleClick}>
-              Logout
-            </a>
-            <h3>Welcome, {email}</h3>
-          </div>
-        ) : (
-          <div>
-            {/* The navbar will show these links before you log in */}
-            <Link to="/login">Login</Link>
-            <Link to="/signup">Sign Up</Link>
-          </div>
-        )}
-      </nav>
+  <div className="nav_main">
+    <div className="nav_logo">
+      <div className="logo_holder">
+        <Link to="/home">
+          <h1 className="logo">SPOT</h1>
+        </Link>
+      </div>
+      <hr />
+      <div>
+        <h5 className="logo_slogan">Meet. People. Seamlessly</h5>
+      </div>
     </div>
-  </AppBar>
+
+    {isLoggedIn ? (
+      <div className="logout_button_holder">
+        {/* The navbar will show these links after you log in */}
+        <button type="button">
+          <a href="#" className="logout_button" onClick={handleClick}>
+            Logout
+          </a>
+        </button>
+      </div>
+    ) : null}
+  </div>
 )
 
+//if user needs login and signup buttons
+// <div>
+//   {/* The navbar will show these links before you log in */}
+//   <Link to="/login">Login</Link>
+//   <Link to="/signup">Sign Up</Link>
+// <div/>
 /**
  * CONTAINER
  */

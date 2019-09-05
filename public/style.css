@@ -1,5 +1,8 @@
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #0b0909;
+  height: 100%;
+  margin: 0px;
 }
 
 a {
@@ -20,7 +23,82 @@ form div {
   display: inline-block;
 }
 
-.home_main {
+hr {
+  border-top: 1px solid #707070;
+  width: 80%;
+}
+
+.body_main {
+  height: 100%;
+  background-color: #292929;
+}
+
+.nav_main {
+  background-color: #0b0909;
+  padding: 0px;
+}
+
+/* google-login */
+.login_button_holder {
   display: flex;
-  background-color: blue;
+  justify-content: center;
+}
+.google_login {
+  display: flex;
+  justify-content: center;
+}
+
+/* logout button */
+.logout_button_holder {
+  display: flex;
+  justify-content: center;
+}
+.logout_button {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+/* parent of nav_logo and logo_slogan */
+.nav_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo_holder {
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo {
+  color: #ffffff;
+  font-family: 'Helvetica';
+  text-align: center;
+  font-weight: 300;
+  font-stretch: ultra-condensed;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.logo_slogan {
+  color: #ffffff;
+  font-family: 'Helvetica';
+  text-align: center;
+  font-weight: 300;
+  font-stretch: ultra-condensed;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.login_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b0909;
+  height: 100%;
+}
+
+.welcome_text {
+  color: #ffffff;
 }
