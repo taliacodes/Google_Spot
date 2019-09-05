@@ -6,11 +6,11 @@ const Event = db.define('event', {
     type: Sequelize.STRING,
     allowNull: false
   },
-  date: {
+  startTime: {
     type: Sequelize.STRING,
     allowNull: true
   },
-  time: {
+  endTime: {
     type: Sequelize.STRING,
     allowNull: true
   },

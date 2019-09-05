@@ -11,6 +11,7 @@ a {
 
 label {
   display: block;
+  color: aliceblue;
 }
 
 nav a {
@@ -26,6 +27,14 @@ form div {
 hr {
   border-top: 1px solid #707070;
   width: 80%;
+}
+
+input[type='submit'] {
+  background-color: rgb(250, 230, 237);
+  border: none;
+  border-radius: 4px;
+  font-family: 'Dosis';
+  color: rgb(191, 129, 171);
 }
 
 .body_main {
@@ -100,5 +109,20 @@ hr {
 }
 
 .welcome_text {
+  color: #ffffff;
+}
+
+.add {
+  width: 70px;
+  height: 70px;
+  float: center;
+}
+
+.add_event {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.create_event_header {
   color: #ffffff;
 }
